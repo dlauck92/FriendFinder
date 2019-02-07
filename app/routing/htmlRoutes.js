@@ -1,0 +1,15 @@
+console.log('- HTML Route Connected -');
+
+var path = require('path');
+
+function htmlRoutes(app) {
+    app.get('/survey', function (req, res) {
+        res.sendFile(path.join(__dirname + '../public/survey.html'));
+      });
+
+      app.get('/survey', function (req, res) {
+        res.sendFile(path.join(__dirname + '../public/survey.html'));
+      });
+}
+
+module.exports = htmlRoutes;
